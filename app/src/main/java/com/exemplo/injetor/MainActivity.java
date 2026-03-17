@@ -37,22 +37,27 @@ public class MainActivity extends AppCompatActivity {
     private void injetar(Uri treeUri) {
         try {
             DocumentFile pickedDir = DocumentFile.fromTreeUri(this, treeUri);
-            DocumentFile file = pickedDir.createFile("text/plain", "config.cfg");
+            DocumentFile file = pickedDir.createFile("text/plain", "aim_config.cfg");
             OutputStream out = getContentResolver().openOutputStream(file.getUri());
             
-            // Simulação dos códigos de Aim Assist (50%)
-            String config = "Aim_Assist: 50\nSmooth: 0.5\nAuto_Headshot: true";
+            // CONFIGURAÇÃO 90% AIM ASSIST
+            String config = "Aim_Lock_Force: 0.9\n" +
+                           "Smooth_Control: 0.15\n" + 
+                           "FOV_Radius: 95.0\n" +
+                           "Headshot_Percent: 90\n" +
+                           "Auto_Tracking: 1\n" +
+                           "No_Recoil_Power: 0.8";
+                           
             out.write(config.getBytes());
             out.close();
 
-            Toast.makeText(this, "Injetado! Abrindo Free Fire...", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Aim Assist 90% ATIVADO! Abrindo FF...", Toast.LENGTH_LONG).show();
             
-            // Abre o Free Fire
             Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.dts.freefireth");
             if (launchIntent != null) startActivity(launchIntent);
             
         } catch (Exception e) {
-            Toast.makeText(this, "Erro ao injetar!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Erro na Injeção!", Toast.LENGTH_SHORT).show();
         }
     }
-                                                                     }
+}
