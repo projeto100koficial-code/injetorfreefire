@@ -1,17 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com"
+<ScrollView xmlns:android="http://schemas.android.com"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#0D0D0D"
+    android:padding="20dp">
 
-    <Button
-        android:id="@+id/btnInjetar"
-        android:layout_width="220dp"
-        android:layout_height="70dp"
-        android:layout_centerInParent="true"
-        android:text="INJETAR 90%"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:backgroundTint="#ebbd2d" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SABOR XIT"
+            android:textColor="#ebbd2d"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELITE SENSITIVITY GENERATOR"
+            android:textColor="#555555"
+            android:textSize="10sp"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NÍVEL DE AUXÍLIO DE MIRA"
+            android:textColor="#ebbd2d"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
+
+        <RadioGroup
+            android:id="@+id/levelGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbBaixa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_option"
+                android:button="@null"
+                android:text="BAIXA (50% ASSIST)"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rbMedia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_option"
+                android:button="@null"
+                android:text="MÉDIA (75% ASSIST)"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <RadioButton
+                android:id="@+id/rbAlta"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_option"
+                android:button="@null"
+                android:checked="true"
+                android:text="ALTA (100% CAPA)"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="30dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnInjetar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#ebbd2d"
+            android:text="INJETAR E ABRIR JOGO"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
+            
