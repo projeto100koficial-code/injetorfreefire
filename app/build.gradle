@@ -1,20 +1,13 @@
-plugins { id 'com.android.application' }
-
 android {
-    namespace 'com.injetor' // Isso resolve o erro que o Copilot mostrou
+    namespace 'com.projeto.injetorfreefire' // O NOME VEM AQUI AGORA
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.injetor"
+        applicationId "com.projeto.injetorfreefire"
         minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        // ... resto das configurações
     }
-}
-
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    implementation 'androidx.documentfile:documentfile:1.0.1'
 }
