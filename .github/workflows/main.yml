@@ -21,4 +21,4 @@ jobs:
         with:
           name: meu-injetor-90-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-         
+          
