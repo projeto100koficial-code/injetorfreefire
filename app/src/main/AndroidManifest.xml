@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com"
-    package="com.projeto.injetorfreefire"> <!-- Nome baseado no seu repositório -->
+<manifest xmlns:android="http://schemas.android.com">
+    <!-- REMOVI O PACKAGE DAQUI -->
 
     <queries>
         <package android:name="com.dts.freefireth" />
@@ -19,6 +19,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
     </application>
 </manifest>
