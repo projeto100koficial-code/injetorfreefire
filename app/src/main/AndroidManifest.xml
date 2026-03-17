@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com">
-    <!-- REMOVI O PACKAGE DAQUI -->
 
     <queries>
+        <!-- Adicionado android:name corretamente -->
         <package android:name="com.dts.freefireth" />
     </queries>
 
     <application
         android:allowBackup="true"
         android:label="Injetor Free Fire"
+        android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         
         <activity 
@@ -19,5 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
     </application>
 </manifest>
