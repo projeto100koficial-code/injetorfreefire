@@ -1,8 +1,11 @@
-plugins { id 'com.android.application' }
+plugins {
+    id 'com.android.application'
+}
 
 android {
     namespace 'com.injetor'
     compileSdk 34
+
     defaultConfig {
         applicationId "com.injetor"
         minSdk 24
