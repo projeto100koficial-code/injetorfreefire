@@ -1,4 +1,4 @@
-name: Gerar APK Injetor Final
+name: Gerar APK Injetor 90
 on: [push]
 jobs:
   build:
@@ -10,12 +10,15 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build APK Direto
+      - name: Build com Gradle 8.2
         run: |
+          wget https://services.gradle.org
+          unzip gradle-8.2-bin.zip
+          export PATH=$PATH:$(pwd)/gradle-8.2/bin
           gradle assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: meu-injetor-90-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-          
+         
