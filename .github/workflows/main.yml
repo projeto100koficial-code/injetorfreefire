@@ -1,4 +1,4 @@
-name: Gerar APK Injetor 90
+name: Gerar APK Injetor Final
 on: [push]
 jobs:
   build:
@@ -10,11 +10,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      
-      - name: Build APK com Gradle Nativo
+      - name: Build APK com Gradle 8.2
         run: |
-          gradle assembleDebug
-          
+          gradle assembleDebug --no-daemon
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
