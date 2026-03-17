@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com" package="com.injetor">
-    <queries><package android:name="com.dts.freefireth" /></queries>
+<manifest xmlns:android="http://schemas.android.com">
+    <queries>
+        <package android:name="com.dts.freefireth" />
+    </queries>
     <application 
         android:label="Sabor Xit VIP" 
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
