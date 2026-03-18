@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0D0D0D"
+    android:fillViewport="true"
     android:padding="20dp">
 
     <LinearLayout
@@ -49,8 +50,8 @@
                 android:layout_height="60dp"
                 android:background="@drawable/bg_option"
                 android:button="@null"
+                android:gravity="center"
                 android:text="BAIXA (50% ASSIST)"
-                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="10dp" />
 
@@ -60,8 +61,8 @@
                 android:layout_height="60dp"
                 android:background="@drawable/bg_option"
                 android:button="@null"
+                android:gravity="center"
                 android:text="MÉDIA (75% ASSIST)"
-                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="10dp" />
 
@@ -72,8 +73,8 @@
                 android:background="@drawable/bg_option"
                 android:button="@null"
                 android:checked="true"
+                android:gravity="center"
                 android:text="ALTA (100% CAPA)"
-                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="30dp" />
         </RadioGroup>
@@ -90,4 +91,3 @@
 
     </LinearLayout>
 </ScrollView>
-            
